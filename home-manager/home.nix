@@ -9,6 +9,7 @@
   home = {
     username = "llr";
     homeDirectory = "/home/llr";
+    enableNixpkgsReleaseCheck = false;
 
     packages = with pkgs; [
       # Development tools
