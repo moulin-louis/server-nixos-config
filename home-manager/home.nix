@@ -35,6 +35,7 @@
       unzip
       ripgrep
       xclip
+      bat
 
       # Applications
       jellyfin
