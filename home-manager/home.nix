@@ -16,7 +16,6 @@
       git
       vim
       neovim
-      gcc
       gnumake
       binutils
       cmake
@@ -36,7 +35,6 @@
       ripgrep
       xclip
       bat
-      openssl
 
       # Applications
       jellyfin

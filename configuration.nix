@@ -112,6 +112,10 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  environment.systemPackages = with pkgs; [
+    gcc
+    clang
+  ];
 
   system.stateVersion = "24.05";
 }
