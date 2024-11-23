@@ -36,6 +36,7 @@
       ripgrep
       xclip
       bat
+      openssl
 
       # Applications
       jellyfin
