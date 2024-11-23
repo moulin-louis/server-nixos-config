@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   imports = [
     ./kitty.nix
@@ -41,7 +41,7 @@
       jellyfin-web
       jellyfin-ffmpeg
       discord
-      #qbittorrent
+      qbittorrent
     ];
 
     sessionVariables = {
