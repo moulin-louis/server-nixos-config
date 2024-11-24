@@ -38,6 +38,8 @@
       ripgrep
       xclip
       bat
+      eza
+      nmap
 
       # Applications
       jellyfin
