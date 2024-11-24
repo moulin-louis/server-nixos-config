@@ -10,6 +10,7 @@
     username = "llr";
     homeDirectory = "/home/llr";
     enableNixpkgsReleaseCheck = false;
+    stateVersion = "24.05";
 
     packages = with pkgs; [
       # Development tools
@@ -26,6 +27,8 @@
       nodejs
       corepack_22
       sccache
+      eslint_d
+      nixpacks
 
       # System utilities
       wget
@@ -48,7 +51,6 @@
       EDITOR = "vim";
     };
 
-    stateVersion = "24.05";
   };
 
   programs = {
