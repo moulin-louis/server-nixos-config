@@ -7,6 +7,7 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs =
@@ -27,6 +28,10 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.llr = import ./home-manager/home.nix;
+            wayland.windowManager.hyprland = {
+              systemd.variables = ["--all"];
+              enable = true;
+            };
           }
         ];
       };

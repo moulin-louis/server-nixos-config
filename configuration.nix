@@ -46,12 +46,6 @@
     nerd-fonts.fira-code
   ];
 
-  # Virtualization
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true;
-  virtualisation.virtualbox.guest.dragAndDrop = true;
-  users.extraGroups.vboxusers.members = [ "llr" ];
-
   # X11 and Desktop Environment
   services.xserver = {
     enable = true;
