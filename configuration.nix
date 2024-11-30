@@ -92,6 +92,12 @@
 
   # System-wide services
   programs.fish.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland = {
+      enable = true;
+    };
+  };
   virtualisation.docker.enable = true;
   services.jellyfin = {
     enable = true;
@@ -111,6 +117,7 @@
   environment.systemPackages = with pkgs; [
     gcc
     clang
+    egl-wayland
   ];
 
   system.stateVersion = "24.11";
