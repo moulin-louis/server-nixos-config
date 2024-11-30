@@ -4,6 +4,7 @@
     ./kitty.nix
     ./tmux.nix
     ./fish.nix
+    ./hyprland.nix
   ];
 
   home = {
@@ -69,6 +70,7 @@
     };
 
   };
+
 
   # Your existing xresources configuration
   xresources.properties = {
