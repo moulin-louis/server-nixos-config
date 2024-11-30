@@ -1,9 +1,9 @@
 { config, pkgs, ... }:
 {
-  programs.wayland = {
+  programs.hyprland = {
     enable = true;
-    xwayland.enable = true;
   };
+  wayland.windowManager.hyprland.enable = true; # enable Hyprland
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
     bind =
