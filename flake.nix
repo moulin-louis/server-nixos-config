@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland";
@@ -29,10 +29,10 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.llr = import ./home-manager/home.nix;
-            wayland.windowManager.hyprland = {
-              systemd.variables = ["--all"];
-              enable = true;
-            };
+            # wayland.windowManager.hyprland = {
+            #   systemd.variables = ["--all"];
+            #   enable = true;
+            # };
           }
         ];
       };

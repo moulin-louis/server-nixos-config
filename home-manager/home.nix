@@ -10,7 +10,7 @@
     username = "llr";
     homeDirectory = "/home/llr";
     enableNixpkgsReleaseCheck = false;
-    stateVersion = "24.05";
+    stateVersion = "24.11";
 
     packages = with pkgs; [
       # Development tools
