@@ -71,7 +71,6 @@
 
   };
 
-
   # Your existing xresources configuration
   xresources.properties = {
     "Xcursor.size" = 16;
