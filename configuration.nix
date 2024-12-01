@@ -56,6 +56,7 @@
       variant = "";
     };
     videoDrivers = [ "nvidia" ];
+    libinput.mouse.accelProfile = "flat";
   };
 
   # Sound
