@@ -30,6 +30,12 @@
       sccache
       eslint_d
       nixpacks
+       gnumake
+      binutils
+      pkg-config
+      udev
+      protobuf
+      openssl.dev
 
       # System utilities
       wget

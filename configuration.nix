@@ -94,6 +94,9 @@
   };
 
   # System-wide services
+  programs.ccache = {
+    enable = true;
+  };
   programs.fish.enable = true;
   programs.hyprland = {
     enable = true;
