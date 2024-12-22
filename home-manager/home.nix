@@ -5,6 +5,7 @@
     ./tmux.nix
     ./fish.nix
     ./hyprland.nix
+    ./gnome.nix
   ];
 
   home = {
@@ -54,6 +55,7 @@
       jellyfin-ffmpeg
       discord
       qbittorrent
+      whatsapp-for-linux
     ];
 
     sessionVariables = {
