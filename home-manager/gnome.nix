@@ -12,6 +12,7 @@ dconf.settings = {
     };
     "org/gnome/desktop/peripherals/touchpad" = {
       two-finger-scrolling-enabled = true;
+      click-method = "areas";
     };
     "org/gnome/mutter" = {
       dynamic-workspaces = true;
