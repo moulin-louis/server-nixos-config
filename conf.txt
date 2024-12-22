@@ -1,0 +1,112 @@
+[org/gnome/control-center]
+last-panel='power'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus']
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'us')]
+xkb-options=['terminate:ctrl_alt_bksp']
+
+[org/gnome/desktop/interface]
+clock-show-weekday=true
+enable-animations=false
+enable-hot-corners=false
+show-battery-percentage=true
+
+[org/gnome/desktop/notifications]
+application-children=['gnome-power-panel', 'firefox', 'discord']
+
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='flat'
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/sound]
+event-sounds=true
+theme-name='__custom'
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/gnome-system-monitor]
+current-tab='processes'
+show-dependencies=false
+show-whose-processes='user'
+
+[org/gnome/gnome-system-monitor/proctree]
+col-26-visible=false
+col-26-width=0
+
+[org/gnome/mutter]
+dynamic-workspaces=true
+workspaces-only-on-primary=true
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-schedule-automatic=false
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=true
+
+[org/gnome/shell]
+last-selected-power-profile='performance'
+welcome-dialog-last-shown-version='47.1'
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=157
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(26, 23)
+window-size=(1231, 902)

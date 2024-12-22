@@ -66,19 +66,16 @@
 
   programs = {
     home-manager.enable = true;
-
     git = {
       enable = true;
       userName = "moulin-louis";
       userEmail = "louis.moulin@outlook.fr";
     };
-
     firefox = {
       enable = true;
     };
-
   };
-
+  
   # Your existing xresources configuration
   xresources.properties = {
     "Xcursor.size" = 16;
