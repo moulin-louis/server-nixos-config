@@ -58,6 +58,16 @@
     shell = pkgs.fish;
   };
 
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      intel-media-sdk
+      intel-media-driver
+      intel-vaapi-driver
+    ];
+  };
+
+
   # System-wide services
   programs.ccache = {
     enable = true;
@@ -85,10 +95,6 @@
       AllowTcpForwarding = false;
       AuthenticationMethods = "publickey";
     };
-    extraConfig = ''
-      AllowGroups ssh-users
-      Protocol 2
-    '';
   };
   networking.firewall.allowedTCPPorts = [ 22 ];
 
