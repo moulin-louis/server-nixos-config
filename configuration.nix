@@ -53,6 +53,7 @@
       "networkmanager"
       "wheel"
       "docker"
+      "ssh-users"
     ];
     shell = pkgs.fish;
   };
