@@ -1,11 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
-    ./kitty.nix
-    ./tmux.nix
     ./fish.nix
-    ./hyprland.nix
-    ./gnome.nix
   ];
 
   home = {
@@ -26,17 +22,6 @@
       gdb
       python3
       python312Packages.pip
-      nodejs
-      corepack_22
-      sccache
-      eslint_d
-      nixpacks
-       gnumake
-      binutils
-      pkg-config
-      udev
-      protobuf
-      openssl.dev
 
       # System utilities
       wget
@@ -48,14 +33,6 @@
       bat
       eza
       nmap
-
-      # Applications
-      jellyfin
-      jellyfin-web
-      jellyfin-ffmpeg
-      discord
-      qbittorrent
-      whatsapp-for-linux
     ];
 
     sessionVariables = {
@@ -65,24 +42,10 @@
   };
 
   programs = {
-    home-manager.enable = true;
-    nix-index = {
-      enable = true;
-      enableFishIntegration = true;
-    };
     git = {
       enable = true;
       userName = "moulin-louis";
       userEmail = "louis.moulin@outlook.fr";
     };
-    firefox = {
-      enable = true;
-    };
-  };
-  
-  # Your existing xresources configuration
-  xresources.properties = {
-    "Xcursor.size" = 16;
-    "Xft.dpi" = 172;
   };
 }
