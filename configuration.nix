@@ -73,11 +73,21 @@
   ];
   services.openssh = {
     enable = true;
-    ports = [ 22 ];
+    ports = [ 22 ];  # Non-standard port
     settings = {
-      PasswordAuthentication = true;
-      PermitRootLogin = "yes";
+      PasswordAuthentication = false;  # Key-based auth only
+      PermitRootLogin = "no";
+      X11Forwarding = false;
+      MaxAuthTries = 3;
+      LoginGraceTime = 30;
+      KbdInteractiveAuthentication = false;
+      AllowTcpForwarding = false;
+      AuthenticationMethods = "publickey";
     };
+    extraConfig = ''
+      AllowGroups ssh-users
+      Protocol 2
+    '';
   };
   networking.firewall.allowedTCPPorts = [ 22 ];
 
